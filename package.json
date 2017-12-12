@@ -1,0 +1,24 @@
+{
+  "name": "activity-finder",
+  "version": "1.0.0",
+  "description": "Simple activity finder for capetonians",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7",
+    "multer": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/twicetheprogrammer/activity-finder.git"
+  },
+  "author": "Njabulo Magagula",
+  "license": "ISC"
+}

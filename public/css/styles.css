@@ -1,0 +1,33 @@
+body {
+  background-image: url("../images/laptop.jpeg"); }
+
+.container {
+  position: relative; }
+  .container .list-group {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: black;
+    opacity: 0.6; }
+    .container .list-group .brand-name {
+      font-weight: bold;
+      font-size: 25px; }
+    .container .list-group a {
+      font-weight: lighter;
+      text-decoration: none;
+      display: inline-block;
+      color: white;
+      display: inline-block;
+      padding: 14px 16px;
+      text-align: center; }
+      .container .list-group a :hover {
+        color: #5998BF; }
+    .container .list-group input[type=text] {
+      width: 250px;
+      padding: 12px 15px 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 12px; }
+
+/*# sourceMappingURL=styles.css.map */
