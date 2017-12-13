@@ -1,33 +1,68 @@
 body {
-  background-image: url("../images/laptop.jpeg"); }
+  background-color: #EAEAEA; }
 
 .container {
   position: relative; }
-  .container .list-group {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    background: black;
-    opacity: 0.6; }
-    .container .list-group .brand-name {
-      font-weight: bold;
-      font-size: 25px; }
-    .container .list-group a {
-      font-weight: lighter;
-      text-decoration: none;
-      display: inline-block;
-      color: white;
-      display: inline-block;
-      padding: 14px 16px;
-      text-align: center; }
-      .container .list-group a :hover {
-        color: #5998BF; }
-    .container .list-group input[type=text] {
-      width: 250px;
-      padding: 12px 15px 12px 20px;
-      box-sizing: border-box;
-      border: 2px solid #ccc;
-      border-radius: 4px;
-      font-size: 12px; }
+  .container .nav-bar {
+    position: absolute;
+    top: 15px;
+    right: 0; }
+    .container .nav-bar .list-group {
+      border-radius: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      opacity: 0.6; }
+      .container .nav-bar .list-group a {
+        font-weight: lighter;
+        text-decoration: none;
+        display: inline-block;
+        color: black;
+        display: inline-block;
+        padding: 14px 16px;
+        text-align: center; }
+        .container .nav-bar .list-group a :hover {
+          color: #5998BF; }
+      .container .nav-bar .list-group .dropdown {
+        list-style: none; }
+        .container .nav-bar .list-group .dropdown a {
+          display: none; }
+      .container .nav-bar .list-group input[type=text] {
+        width: 250px;
+        padding: 12px 15px 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        font-size: 12px; }
+  .container .middle-content {
+    position: absolute;
+    top: 120px;
+    left: 5%;
+    right: 5%; }
+    .container .middle-content fieldset {
+      border-radius: 30px;
+      box-shadow: 5px 4px 5px grey; }
+      .container .middle-content fieldset legend {
+        text-align: center; }
+      .container .middle-content fieldset p {
+        color: black;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 20px; }
+  .container .activities {
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    left: 5%; }
+    .container .activities fieldset {
+      margin-top: 20px;
+      margin-right: 5px;
+      margin-bottom: 50px;
+      float: left;
+      width: 40%;
+      border-radius: 30px;
+      box-shadow: 5px 4px 5px grey; }
+    .container .activities .main-content fieldset {
+      width: 45%;
+      margin-left: 5px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -7,30 +7,76 @@
       ================== stylesheets and other external files and cdn's ==================
    -->
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" href="fontawesome-free-5.0.1/web-fonts-with-css/css/fontawesome-all.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  </head>
+        <script type="text/javascript" src="js/finder.js"></script>
+    </head>
   <body>
         <div class="container">
             <!--
             ========================  NAVIGATION BAR =========================
           -->
 
-                <ul class="list-group">
-                    <a href="#"><li class="brand-name">&nbsp;&nbsp;A-BOARD</li></a>
-                    <a href="#"><li class="list-group-item">&nbsp; Home</li></a>
-                    <a href="#"><li class="list-group-item">&nbsp; Theatre</li></a>
-                    <a href="#"><li class="list-group-item">&nbsp; Skating</li></a>
-                    <a href="#"><li class="list-group-item">&nbsp; Gym</li></a>
-                    <a href="#"><li class="list-group-item">&nbsp;&nbsp;&nbsp;Filter</li></a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" onkeyup="filter()" name="search" placeholder="Search...">
-              </ul>
+            <div class="nav-bar">
+                  <ul class="list-group">
+                      <a href="#"><li class="list-group-item">&nbsp; Home</li></a>
+                      <a href="accomodation-advertisement/index.html" target="_blank"><li class="list-group-item">&nbsp; Vacation Rentals</li></a>
+                      <a href="https://myciti.org.za/en/home/" target="_blank"><li class="list-group-item">&nbsp; Transportation</li></a>
+                      <a href="https://www.tripadvisor.com/Restaurants-g1722390-Cape_Town_Western_Cape.html" target="_blank"><li class="list-group-item">&nbsp; Resturants</li></a>
+                      <a href="#" target="_blank"><li class="list-group-item">&nbsp;Filter</li></a>
+                      <a href="#" target="_blank"><li class="list-group-item">&nbsp;Activities data&nbsp;&nbsp;<i class="fa fa-caret-down"></i></li></a>
+                      <input type="text"  class="search" placeholder="Search...">
+                </ul>
+            </div>
+            <!--
+            ===================== MIDDLE CONTENT ======================
+          -->
+            <div class="middle-content">
+                <fieldset>
+                    <h3 align="center">Activity finder</h3>
+                    <hr>
+                    <p>
+                      Search for an activity by playing around with the filters or simply select “Yes” in the Free taster session option to list all the clubs in the county ready to welcome you with a free taster. With lots of Free Sports Taster Sessions available it really is a great opportunity.
+
+  Not sure what sport to try? As a starting point, think about what you have enjoyed (or hated!) in the past, what you've seen on telly and always wanted to try, or take the BBC's test to see which sport suits your personality. Then find out where to do it right here!
+                    </p>
+                    <button type="button" name="button" class="activity-btn">More Activities</button>
+                </fieldset>
+                <div>
+                    <p align="center">----------</p>
+                </div>
+            </div><br>
+            <div class="activities">
+                <form action="http://127.0.0.1:8081/activity" method = "POST">
+                    <fieldset class="activity">
+                    </fieldset>
+
+                </form>
+                <div class="main-content">
+                    <fieldset>
+                         <h3 align="center" style="font-size : 30px;">Activities to do</h3>
+                         <hr>
+                         <h4 align="center" style="font-size : 18px;">Types of attractions</h4>
+                         <form action="" method="post">
+                            <input type="radio" name="nature and parks" value="Nature and Parks">&nbsp;Nature and Parks<br>
+                            <input type="radio" name="tour" value="Tours">&nbsp;Tours<br>
+                            <input type="radio" name="outdoor_activities" value="Outdoor Activities">&nbsp;Outdoor Activities<br>
+                            <input type="radio" name="sights" value="Sights and Landmarks">&nbsp;Sights and Landmarks<br>
+                            <input type="radio" name="refreshments" value="Food and Drink">&nbsp;Food and Drink<br>
+                            <input type="radio" name="transportation" value="Transportation">&nbsp;Transportation<br>
+                            <input type="radio" name="sport" value="Boat tours and water sports">&nbsp;Boat tours and water sports<br><br>
+                         </form>
+                         <!-- <div  id="slide-show">
+                              <h3 align="center">Capetown teasers</h3>
+                              <hr>
+                              <img src="images/hiking.jpeg" alt="Trail hiking image" width="150px">
+                              <img src="images/top.jpeg" alt="Top city view image" width="150px">
+                              <img src="images/wheel.jpeg" alt="Rotating wheel image" width="150px">
+                         </div> -->
+                    </fieldset>
+                </div>
+            </div>
         </div>
    </body>
 </html>
-<script type="text/javascript">
-
-        function filter(){
-
-        }
-</script>

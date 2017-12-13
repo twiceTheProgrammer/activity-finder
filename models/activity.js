@@ -3,9 +3,9 @@ var Schema = mongoose.Schema;
 
 var activitySchema = new Schema({
   name: String,
-  Cost:Number,
+  cost:Number,
   location : String ,
-  duration : Number 
+  duration : Number
 });
 var Activity = mongoose.model('Activity', activitySchema);
 module.exports = Activity;

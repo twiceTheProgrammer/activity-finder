@@ -1,40 +1,106 @@
 body {
-    background-image: url('../images/laptop.jpeg');
+      background-color: #EAEAEA;
 }
 .container {
     position: relative;
   //=============== navigation bar =================
-         .list-group {
-              padding : 0 ;
-              margin : 0 ;
-              list-style: none;
-              background :black;
-              opacity : 0.6;
-              .brand-name {
-                      font-weight: bold;
-                      font-size: 25px;
-              }
-              a {
+    .nav-bar {
 
-                   font-weight: lighter;
-                   text-decoration: none;
-                   display: inline-block;
-                   color : white ;
-                   display: inline-block;
-                   padding : 14px 16px;
-                   text-align: center;
-                   :hover {
-                        color : #5998BF;
-                   }
+          position: absolute;
+          top : 15px ;
+          right : 0;
 
+          .list-group {
+
+               border-radius: 10px;
+               padding : 0 ;
+               margin : 0 ;
+               list-style: none;
+               opacity : 0.6;
+               a {
+
+                    font-weight: lighter;
+                    text-decoration: none;
+                    display: inline-block;
+                    color : black ;
+                    display: inline-block;
+                    padding : 14px 16px;
+                    text-align: center;
+                    :hover {
+                         color : #5998BF;
+                    }
+
+               }
+               .dropdown {
+                      list-style: none ;
+                      a {
+                          display : none;
+                      }
+               }
+               input[type=text]{
+                       width : 250px;
+                       padding: 12px 15px 12px 20px;
+                       box-sizing: border-box;
+                       border: 2px solid #ccc;
+                       border-radius: 10px;
+                       font-size: 12px;
+               }
+          }
+    }
+// ================= MIDDLE CONTENT ================
+
+    .middle-content {
+          position : absolute;
+          top : 120px ;
+          left : 5% ;
+          right : 5%;
+
+          fieldset {
+              border-radius: 30px;
+              box-shadow: 5px 4px 5px grey;
+              legend {
+                    text-align: center;
               }
-              input[type=text]{
-                      width : 250px;
-                      padding: 12px 15px 12px 20px;
-                      box-sizing: border-box;
-                      border: 2px solid #ccc;
-                      border-radius: 4px;
-                      font-size: 12px;
+              p{
+                  color : black;
+                  font-family: 'Open Sans Condensed', sans-serif;
+                  font-size : 20px;
               }
-         }
+
+          }
+          // .activity-btn {
+          //           border-radius: 15px ;
+          //           background-color: #ccfffb;
+          //           padding : 10px 14px;
+          // }
+
+    }
+//================= ACTIVITIES ===============
+
+    .activities {
+        position: absolute;
+        top : 400px ;
+        width: 100%;
+        left : 5%;
+        fieldset {
+          margin-top: 20px;
+          margin-right: 5px;
+          margin-bottom: 50px;
+          float : left;
+          width : 40%;
+          border-radius: 30px;
+          box-shadow: 5px 4px 5px grey;
+        }
+        .main-content {
+            fieldset {
+                width : 45%;
+                margin-left: 5px;
+                //
+                // //====== slide show capetown teaser ======
+                // #slide-show {
+                //       width: inherit;
+                // }
+            }
+        }
+    }
 }
