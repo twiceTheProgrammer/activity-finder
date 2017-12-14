@@ -24,11 +24,11 @@
                       <a href="accomodation-advertisement/index.html" target="_blank"><li class="list-group-item">&nbsp; Vacation Rentals</li></a>
                       <a href="https://myciti.org.za/en/home/" target="_blank"><li class="list-group-item">&nbsp; Transportation</li></a>
                       <a href="https://www.tripadvisor.com/Restaurants-g1722390-Cape_Town_Western_Cape.html" target="_blank"><li class="list-group-item">&nbsp; Resturants</li></a>
-                      <a href="#" target="_blank"><li class="list-group-item">&nbsp;Filter</li></a>
                       <a href="#" target="_blank"><li class="list-group-item">&nbsp;Activities data&nbsp;&nbsp;<i class="fa fa-caret-down"></i></li></a>
                       <input type="text"  class="search" placeholder="Search...">
                 </ul>
             </div>
+            
             <!--
             ===================== MIDDLE CONTENT ======================
           -->
@@ -48,32 +48,54 @@
                 </div>
             </div><br>
             <div class="activities">
-                <form action="http://127.0.0.1:8081/activity" method = "POST">
-                    <fieldset class="activity">
-                    </fieldset>
-
-                </form>
                 <div class="main-content">
-                    <fieldset>
-                         <h3 align="center" style="font-size : 30px;">Activities to do</h3>
-                         <hr>
+                    <fieldset class="things-to-do">
                          <h4 align="center" style="font-size : 18px;">Types of attractions</h4>
-                         <form action="" method="post">
-                            <input type="radio" name="nature and parks" value="Nature and Parks">&nbsp;Nature and Parks<br>
-                            <input type="radio" name="tour" value="Tours">&nbsp;Tours<br>
-                            <input type="radio" name="outdoor_activities" value="Outdoor Activities">&nbsp;Outdoor Activities<br>
-                            <input type="radio" name="sights" value="Sights and Landmarks">&nbsp;Sights and Landmarks<br>
-                            <input type="radio" name="refreshments" value="Food and Drink">&nbsp;Food and Drink<br>
-                            <input type="radio" name="transportation" value="Transportation">&nbsp;Transportation<br>
-                            <input type="radio" name="sport" value="Boat tours and water sports">&nbsp;Boat tours and water sports<br><br>
-                         </form>
-                         <!-- <div  id="slide-show">
-                              <h3 align="center">Capetown teasers</h3>
-                              <hr>
-                              <img src="images/hiking.jpeg" alt="Trail hiking image" width="150px">
-                              <img src="images/top.jpeg" alt="Top city view image" width="150px">
-                              <img src="images/wheel.jpeg" alt="Rotating wheel image" width="150px">
-                         </div> -->
+                               <input type="radio" name="catergory" value="Nature &amp; Parks">&nbsp;Nature and Parks<br>
+                               <input type="radio" name="catergory" value="Tours">&nbsp;Tours<br>
+                               <input type="radio" name="catergory" value="Outdoor Activities">&nbsp;Outdoor Activities<br>
+                               <input type="radio" name="catergory" value="Sights &amp; Landmarks">&nbsp;Sights and Landmarks<br>
+                               <input type="radio" name="catergory" value="Food &amp; Drink">&nbsp;Food and Drink<br>
+                               <input type="radio" name="catergory" value="Seal and Harbour Cruise">&nbsp;Transportation<br>
+                               <input type="radio" name="catergory" value="Boat tours &amp; water sports">&nbsp;Boat tours and water sports<br><br>
+                               <hr>
+                        <h4 align="center" style="font-size : 18px;">Capetown weather essentials</h4>
+                        <table id="customers" align="center">
+                          <tr>
+                            <th>Month</th>
+                            <th>High</th>
+                            <th>Low</th>
+                          </tr>
+                          <tr>
+                            <td>Dec</td>
+                            <td>&nbsp;23&deg;C</td>
+                            <td>13&deg;C</td>
+                          </tr>
+                          <tr>
+                            <td>Jan</td>
+                            <td>&nbsp;24&deg;C</td>
+                            <td>13&deg;C</td>
+                          </tr>
+                          <tr>
+                            <td>Feb</td>
+                            <td>&nbsp;25&deg;C</td>
+                            <td>14&deg;C</td>
+                          </tr>
+                          <tr>
+                            <td>Mar</td>
+                            <td>&nbsp;24&deg;C</td>
+                            <td>14&deg;C</td>
+                          </tr>
+                          <tr>
+                            <td>Jan</td>
+                            <td>&nbsp;18&deg;C</td>
+                            <td>15&deg;C</td>
+                          </tr>
+                        </table>
+
+                    </fieldset>
+                    <fieldset class="activity-container">
+                         <h3 align="center" style="font-size : 30px;">Activities to do in capetown</h3>
                     </fieldset>
                 </div>
             </div>

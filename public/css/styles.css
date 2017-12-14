@@ -61,8 +61,31 @@ body {
       width: 40%;
       border-radius: 30px;
       box-shadow: 5px 4px 5px grey; }
-    .container .activities .main-content fieldset {
-      width: 45%;
-      margin-left: 5px; }
+    .container .activities .main-content .things-to-do {
+      width: 20%;
+      margin-right: 20px; }
+      .container .activities .main-content .things-to-do #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%; }
+        .container .activities .main-content .things-to-do #customers td, .container .activities .main-content .things-to-do #customers th {
+          border: 1px solid #ddd;
+          padding: 8px; }
+        .container .activities .main-content .things-to-do #customers tr:nth-child(even) {
+          background-color: #f2f2f2; }
+          .container .activities .main-content .things-to-do #customers tr:nth-child(even) :hover {
+            background-color: #ddd; }
+        .container .activities .main-content .things-to-do #customers th {
+          padding-top: 6px;
+          padding-bottom: 6px;
+          text-align: left;
+          background-color: #EAEAEA;
+          color: black; }
+    .container .activities .main-content .activity-container {
+      width: 64%; }
+      .container .activities .main-content .activity-container .activity {
+        margin-left: 30px; }
+        .container .activities .main-content .activity-container .activity img {
+          border-radius: 15px; }
 
 /*# sourceMappingURL=styles.css.map */

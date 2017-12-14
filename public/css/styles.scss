@@ -68,11 +68,6 @@ body {
               }
 
           }
-          // .activity-btn {
-          //           border-radius: 15px ;
-          //           background-color: #ccfffb;
-          //           padding : 10px 14px;
-          // }
 
     }
 //================= ACTIVITIES ===============
@@ -92,15 +87,44 @@ body {
           box-shadow: 5px 4px 5px grey;
         }
         .main-content {
-            fieldset {
-                width : 45%;
-                margin-left: 5px;
-                //
-                // //====== slide show capetown teaser ======
-                // #slide-show {
-                //       width: inherit;
-                // }
-            }
+            .things-to-do {
+                width : 20%;
+                margin-right: 20px;
+
+                #customers {
+                    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+
+                    td , th{
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                    }
+                    tr:nth-child(even) {
+                          background-color: #f2f2f2;
+                          :hover { background-color: #ddd;}
+                    }
+                    th {
+                          padding-top: 6px;
+                          padding-bottom: 6px;
+                          text-align: left;
+                          background-color: #EAEAEA;
+                          color: black;
+                    }
+
+                  }
+                }
+            .activity-container {
+                    width : 64% ;
+                    .activity {
+                        margin-left: 30px;
+
+                        img {
+                              border-radius: 15px;
+                        }
+                    }
+          }
+
         }
     }
 }
