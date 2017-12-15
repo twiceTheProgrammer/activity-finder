@@ -33,7 +33,8 @@ body {
         box-sizing: border-box;
         border: 2px solid #ccc;
         border-radius: 10px;
-        font-size: 12px; }
+        font-size: 12px;
+        outline: none; }
   .container .middle-content {
     position: absolute;
     top: 120px;
